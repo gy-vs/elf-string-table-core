@@ -1,0 +1,1 @@
+import{expect,it}from'vitest';import{parseHeader}from'../src/index.js';it('parses',()=>{const x=new Uint8Array(20);x.set([127,69,76,70,1,1]);expect(parseHeader(x).bits).toBe(32)});
